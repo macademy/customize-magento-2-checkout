@@ -25,6 +25,11 @@
                                                                     <item name="postcode" xsi:type="array">
                                                                         <item name="sortOrder" xsi:type="string">76</item>
                                                                     </item>
+                                                                    <item name="telephone" xsi:type="array">
+                                                                        <item name="validation" xsi:type="array">
+                                                                            <item name="validate-phoneStrict" xsi:type="boolean">true</item>
+                                                                        </item>
+                                                                    </item>
                                                                 </item>
                                                             </item>
                                                         </item>

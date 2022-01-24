@@ -36,6 +36,17 @@
                                                     </item>
                                                 </item>
                                             </item>
+                                            <item name="email-step" xsi:type="array">
+                                                <item name="component" xsi:type="string">uiComponent</item>
+                                                <item name="children" xsi:type="array">
+                                                    <item name="email" xsi:type="array">
+                                                        <item name="component" xsi:type="string">Macademy_CustomCheckout/js/view/email</item>
+                                                        <item name="config" xsi:type="array">
+                                                            <item name="sortOrder" xsi:type="string">1</item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
                                         </item>
                                     </item>
                                 </item>

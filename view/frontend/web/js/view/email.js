@@ -34,6 +34,9 @@ define([
         },
         navigate: function() {
             this.isVisible(true);
+        },
+        navigateToNextStep: function() {
+            stepNavigator.next();
         }
     });
 });

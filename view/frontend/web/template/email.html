@@ -1,3 +1,15 @@
 <li id="email" class="checkout-email" data-bind="fadeVisible: isVisible">
-
+    <div id="checkout-step-email"
+         class="step-content"
+         data-role="content"
+         role="tabpanel"
+         aria-hidden="false">
+        <form data-bind="submit: navigateToNextStep" novalidate="novalidate">
+            <div class="primary">
+                <button data-role="opc-continue" type="submit" class="button action continue primary">
+                    <span translate="'Next'"></span>
+                </button>
+            </div>
+        </form>
+    </div>
 </li>

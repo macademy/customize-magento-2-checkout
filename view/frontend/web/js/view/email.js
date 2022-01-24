@@ -3,13 +3,15 @@ define([
     'ko',
     'Magento_Checkout/js/model/step-navigator',
     'mage/translate',
-    'underscore'
+    'underscore',
+    'Magento_Checkout/js/model/quote',
 ], function(
     Component,
     ko,
     stepNavigator,
     $t,
-    _
+    _,
+    quote
 ) {
     'use strict';
 
@@ -18,6 +20,7 @@ define([
             template: 'Macademy_CustomCheckout/email',
             isVisible: ko.observable(false),
         },
+        quoteIsVirtual: quote.isVirtual(),
         initialize: function() {
             this._super();
 

@@ -4,6 +4,7 @@
          data-role="content"
          role="tabpanel"
          aria-hidden="false">
+        <each if="!quoteIsVirtual" args="getRegion('customer-email')" render=""/>
         <form data-bind="submit: navigateToNextStep" novalidate="novalidate">
             <div class="primary">
                 <button data-role="opc-continue" type="submit" class="button action continue primary">

@@ -104,6 +104,13 @@
                                                     </item>
                                                 </item>
                                             </item>
+                                            <item name="summary" xsi:type="array">
+                                                <item name="children" xsi:type="array">
+                                                    <item name="cart_items" xsi:type="array">
+                                                        <item name="component" xsi:type="string">Macademy_CustomCheckout/js/view/summary/cart-items</item>
+                                                    </item>
+                                                </item>
+                                            </item>
                                         </item>
                                     </item>
                                 </item>

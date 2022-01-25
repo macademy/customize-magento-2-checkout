@@ -88,6 +88,7 @@
                                                 <item name="component" xsi:type="string">Magento_SalesRule/js/view/payment/discount</item>
                                                 <item name="config" xsi:type="array">
                                                     <item name="displayArea" xsi:type="string">after-summary</item>
+                                                    <item name="componentDisabled" xsi:type="boolean">true</item>
                                                 </item>
                                                 <item name="children" xsi:type="array">
                                                     <item name="errors" xsi:type="array">

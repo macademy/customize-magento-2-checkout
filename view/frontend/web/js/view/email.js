@@ -5,13 +5,17 @@ define([
     'mage/translate',
     'underscore',
     'Magento_Checkout/js/model/quote',
+    'Magento_Customer/js/model/customer',
+    'jquery'
 ], function(
     Component,
     ko,
     stepNavigator,
     $t,
     _,
-    quote
+    quote,
+    customer,
+    $
 ) {
     'use strict';
 
@@ -39,7 +43,20 @@ define([
             this.isVisible(true);
         },
         navigateToNextStep: function() {
-            stepNavigator.next();
+            if (this.validateEmail()) {
+                stepNavigator.next();
+            }
+        },
+        validateEmail: function() {
+            const loginFormSelector = 'form[data-role=email-with-possible-login]';
+            let emailValidationResult = customer.isLoggedIn();
+
+            if (!customer.isLoggedIn()) {
+                $(loginFormSelector).validation();
+                emailValidationResult = Boolean($(loginFormSelector + ' input[name=username]').valid());
+            }
+
+            return emailValidationResult;
         }
     });
 });

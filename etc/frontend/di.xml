@@ -7,4 +7,11 @@
             </argument>
         </arguments>
     </type>
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="macademy_customcheckout_checkoutconfigprovider" xsi:type="object">Macademy\CustomCheckout\Model\CheckoutConfigProvider</item>
+            </argument>
+        </arguments>
+    </type>
 </config>

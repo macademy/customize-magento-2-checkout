@@ -3,13 +3,24 @@
 namespace Macademy\CustomCheckout\Model;
 
 use Magento\Checkout\Model\ConfigProviderInterface;
+use Magento\Framework\View\LayoutInterface;
 
 class CheckoutConfigProvider implements ConfigProviderInterface
 {
+    private $fulfillmentStatus;
+
+    public function __construct(
+        LayoutInterface $layout
+    ) {
+        $this->fulfillmentStatus = $layout->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('fulfillment_status')
+            ->toHtml();
+    }
+
     public function getConfig(): array
     {
         return [
-            'myKey' => 'myValue',
+            'fulfillment_status' => $this->fulfillmentStatus,
         ];
     }
 }

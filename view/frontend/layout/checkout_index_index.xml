@@ -16,7 +16,7 @@
                                                         <item name="children" xsi:type="array">
                                                             <item name="customer-email" xsi:type="array">
                                                                 <item name="config" xsi:type="array">
-                                                                    <item name="componentDisabled" xsi:type="boolean">true</item>
+                                                                    <item name="componentDisabled" xsi:type="boolean">false</item>
                                                                 </item>
                                                             </item>
                                                             <item name="shipping-address-fieldset" xsi:type="array">
@@ -43,6 +43,9 @@
                                             </item>
                                             <item name="email-step" xsi:type="array">
                                                 <item name="component" xsi:type="string">uiComponent</item>
+                                                <item name="config" xsi:type="array">
+                                                    <item name="componentDisabled" xsi:type="boolean">true</item>
+                                                </item>
                                                 <item name="children" xsi:type="array">
                                                     <item name="email" xsi:type="array">
                                                         <item name="component" xsi:type="string">Macademy_CustomCheckout/js/view/email</item>

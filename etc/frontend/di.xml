@@ -4,6 +4,7 @@
         <arguments>
             <argument name="layoutProcessors" xsi:type="array">
                 <item name="macademy_customcheckout_checkout_layout_processor_updateaddresssortorder" xsi:type="object">Macademy\CustomCheckout\Block\Checkout\LayoutProcessor\UpdateAddressSortOrder</item>
+                <item name="macademy_customcheckout_checkout_layout_processor_addressclassificationattribute" xsi:type="object">Macademy\CustomCheckout\Block\Checkout\LayoutProcessor\AddressClassificationAttribute</item>
             </argument>
         </arguments>
     </type>

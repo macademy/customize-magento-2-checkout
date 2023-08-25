@@ -7,7 +7,7 @@ use MarkShust\SimpleData\Setup\Patch\SimpleDataPatch;
 
 class BlockFulfillmentStatusCreate extends SimpleDataPatch
 {
-    public function apply(): self
+    public function apply(): DataPatchInterface
     {
         $this->block->save([
             'identifier' => 'fulfillment_status',

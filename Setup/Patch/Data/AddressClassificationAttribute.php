@@ -41,7 +41,7 @@ class AddressClassificationAttribute implements DataPatchInterface
         return [];
     }
 
-    public function apply(): self
+    public function apply(): DataPatchInterface
     {
         $eavSetup = $this->eavSetupFactory->create(['setup' => $this->moduleDataSetup]);
         $eavSetup->addAttribute(

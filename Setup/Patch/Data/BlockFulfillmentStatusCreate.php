@@ -3,6 +3,7 @@ declare(strict_types = 1);
 
 namespace Macademy\CustomCheckout\Setup\Patch\Data;
 
+use Magento\Framework\Setup\Patch\DataPatchInterface;
 use MarkShust\SimpleData\Setup\Patch\SimpleDataPatch;
 
 class BlockFulfillmentStatusCreate extends SimpleDataPatch
